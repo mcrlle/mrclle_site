@@ -1,0 +1,117 @@
+
+import React, { useEffect } from 'react';
+import { ArrowLeft, Laptop } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from './ui/Button';
+import { ScrollReveal } from './ui/ScrollReveal';
+
+const BehanceIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 256 256" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+      <path d="M 81.276 24.925 H 58.726 v -5.601 h 22.553 v 5.601 C 81.278 24.925 81.276 24.925 81.276 24.925 z M 43.713 47.894 c 1.455 2.254 2.182 4.99 2.182 8.203 c 0 3.322 -0.82 6.303 -2.488 8.935 c -1.061 1.742 -2.378 3.214 -3.961 4.398 c -1.783 1.37 -3.893 2.31 -6.32 2.812 C 30.693 72.746 28.058 73 25.22 73 H 0 V 17 h 27.045 c 6.817 0.111 11.65 2.086 14.504 5.965 c 1.712 2.379 2.561 5.233 2.561 8.551 c 0 3.424 -0.859 6.163 -2.588 8.244 c -0.962 1.167 -2.383 2.228 -4.264 3.187 C 40.107 43.99 42.268 45.633 43.713 47.894 z M 12.915 39.078 h 11.85 c 2.435 0 4.404 -0.463 5.92 -1.388 c 1.515 -0.924 2.271 -2.566 2.271 -4.924 c 0 -2.605 -1.001 -4.334 -3.008 -5.166 c -1.725 -0.578 -3.932 -0.876 -6.61 -0.876 H 12.915 V 39.078 z M 34.097 55.297 c 0 -2.909 -1.189 -4.92 -3.562 -5.999 c -1.327 -0.613 -3.199 -0.927 -5.6 -0.949 h -12.02 v 14.924 h 11.834 c 2.431 0 4.313 -0.318 5.671 -0.982 C 32.869 61.07 34.097 58.747 34.097 55.297 z M 89.643 46.187 c 0.272 1.832 0.396 4.49 0.346 7.965 H 60.783 c 0.161 4.031 1.553 6.85 4.192 8.464 c 1.592 1.012 3.522 1.506 5.781 1.506 c 2.383 0 4.325 -0.602 5.82 -1.841 c 0.815 -0.656 1.533 -1.583 2.154 -2.752 h 10.705 c -0.28 2.381 -1.569 4.796 -3.886 7.25 c -3.589 3.9 -8.622 5.856 -15.086 5.856 c -5.34 0 -10.046 -1.649 -14.131 -4.936 c -4.071 -3.299 -6.116 -8.648 -6.116 -16.069 c 0 -6.959 1.836 -12.285 5.519 -15.992 c 3.697 -3.714 8.469 -5.563 14.35 -5.563 c 3.486 0 6.629 0.623 9.432 1.876 c 2.795 1.254 5.105 3.228 6.924 5.94 C 88.091 40.279 89.149 43.041 89.643 46.187 z M 79.107 47.232 c -0.196 -2.788 -1.127 -4.897 -2.803 -6.339 c -1.662 -1.446 -3.738 -2.172 -6.216 -2.172 c -2.696 0 -4.778 0.776 -6.258 2.301 c -1.489 1.522 -2.416 3.591 -2.796 6.21 L 79.107 47.232 L 79.107 47.232 z" />
+    </g>
+  </svg>
+);
+
+const ProjectArcaneHub: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="pt-40 pb-24 min-h-screen">
+      <div className="container mx-auto px-6 max-w-6xl">
+        
+        <ScrollReveal className="mb-32">
+          <Link to="/studio" className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.4em] text-neutral-500 hover:text-white transition-colors mb-16 group">
+            <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" /> Back to Studio
+          </Link>
+          <div className="flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-light tracking-tighter text-white uppercase leading-none">Arcane<br />Hub<span className="text-neutral-700">.</span></h1>
+            <div className="text-right">
+                <span className="text-[9px] text-neutral-600 uppercase tracking-[0.6em]">CASE STUDY / 003</span>
+            </div>
+          </div>
+          <p className="mt-12 text-lg md:text-2xl font-light text-neutral-400 max-w-4xl leading-relaxed uppercase tracking-tight">
+            Centro de comando digital para gerenciamento estratégico de campanhas de RPG.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 mb-32 border-t border-white/5 pt-20">
+          <div className="md:col-span-4 space-y-16">
+            <div>
+              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Services</h4>
+              <ul className="text-[11px] text-neutral-400 space-y-3 uppercase tracking-[0.3em] font-medium">
+                <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Product Design</li>
+                <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Information Architecture</li>
+                <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Game UI/UX</li>
+                <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Creative Strategy</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Tech Stack</h4>
+              <ul className="text-[11px] text-neutral-400 space-y-3 uppercase tracking-[0.3em] font-medium">
+                <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Figma & AI Integration</li>
+              </ul>
+            </div>
+
+            <div className="pt-8 border-t border-white/5">
+              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Core Challenge</h4>
+              <div className="relative group">
+                <div className="absolute -top-6 -left-2 text-4xl text-white/[0.05] font-serif pointer-events-none select-none">
+                  “
+                </div>
+                <div className="pl-6 border-l border-white/10">
+                  <p className="text-sm text-neutral-400 font-light leading-relaxed tracking-tight italic">
+                    Centralizar a complexidade narrativa sem quebrar a imersão do mestre e dos jogadores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-8 space-y-24">
+            <section className="space-y-10">
+              <div className="flex items-center gap-6">
+                <span className="text-[10px] text-white/20 font-bold uppercase tracking-widest">01</span>
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">Visão Geral</h3>
+                <div className="flex-grow h-[1px] bg-white/5"></div>
+              </div>
+              <p className="text-neutral-400 leading-relaxed text-base md:text-lg font-light max-w-3xl">
+                O Arcane Hub nasceu da necessidade de organizar a fragmentação de dados em sessões de RPG de mesa. O projeto foca na centralização de fluxos de trabalho — desde a gestão de NPCs até cronologias complexas — em uma interface única. A solução foi estruturada para reduzir a carga cognitiva, permitindo que o Mestre mantenha o foco na narrativa enquanto a ferramenta lida com a logística de dados de forma invisível e eficiente.
+              </p>
+            </section>
+
+            <section className="space-y-10">
+              <div className="flex items-center gap-6">
+                <span className="text-[10px] text-white/20 font-bold uppercase tracking-widest">02</span>
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">O Desafio</h3>
+                <div className="flex-grow h-[1px] bg-white/5"></div>
+              </div>
+              <p className="text-neutral-400 leading-relaxed text-base md:text-lg font-light max-w-3xl">
+                Através de análises de comportamento em jogo, identifiquei que a agilidade na busca por informações é o fator crítico de sucesso em uma campanha. O design foi projetado com uma Arquitetura de Informação rigorosa, utilizando sistemas de etiquetas semânticas e uma interface otimizada para cenários de uso real (dark-mode nativo). O resultado é um centro de comando que possuio um objetivo muito maior do que armazenar informações, conectando eventos e garantindo que o ritmo da história nunca seja interrompido por burocracias de sistema.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <section className="flex flex-col md:flex-row gap-6 justify-center items-center py-24 border-t border-white/5">
+            <a href="https://www.figma.com/proto/cMR58JBqZ38XZ6a1rdxjCP/Arcane-Hub-%7C-Boas-Vindas--Aventureiro?node-id=460-618&t=072vT5VF7IU0RCBR-1" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+                <Button className="w-full md:min-w-[320px] gap-4">
+                    <Laptop className="w-3.5 h-3.5" /> Interactive Prototype
+                </Button>
+            </a>
+            <a href="https://www.behance.net/gallery/240824921/Arcane-Hub-Boas-Vindas-Aventureiro-" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+                <Button variant="outline" className="w-full md:min-w-[320px] gap-4">
+                    <BehanceIcon className="w-3.5 h-3.5" /> Behance Case
+                </Button>
+            </a>
+        </section>
+
+      </div>
+    </div>
+  );
+};
+
+export default ProjectArcaneHub;

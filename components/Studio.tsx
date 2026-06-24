@@ -212,7 +212,7 @@ const Studio: React.FC = () => {
                     </div>
 
                     <div className="flex items-center gap-2 text-[9px] uppercase tracking-[0.25em] text-neutral-500 group-hover:text-white transition-colors pt-4 border-t border-white/[0.02]">
-                      Explorar estúdio de caso <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                      Explorar estudo de caso <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                     </div>
                   </div>
                 </ScrollReveal>
